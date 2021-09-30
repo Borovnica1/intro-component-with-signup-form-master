@@ -212,10 +212,10 @@ footer {
   }
 }
 
-@media (max-width: 620px) { 
+@media only screen and (max-width: 620px) and (min-height: 360px) { 
 
   body {
-    padding: 100px 0;
+    padding: 20px 0 100px 0;
     height: fit-content;
   }
 
@@ -250,4 +250,19 @@ footer {
     font-size: 30px;
     line-height: 30px;
   }
+}
+
+
+@media (max-height: 450px) {
+  footer {
+    display: none;
+  }
+
+  .disclosure {
+    margin-bottom: 0;
+  }
+
+  .sign-up__form label {
+    margin-bottom: 7px;
+}
 }
